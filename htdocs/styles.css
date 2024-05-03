@@ -51,10 +51,10 @@ form {
   border-radius: var(--border-radius);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+/* Login and Signup button/form styles */
 .login-form,
 .signup-form {
-  text-align: center; /* Center the form */
+  text-align: center; 
 }
 
 .form-group {
@@ -118,33 +118,33 @@ footer {
 /* Navigation styles */
 nav ul {
   display: flex;
-  flex-direction: row; /* Adjust from column to row for horizontal alignment */
-  justify-content: center; /* Centers the navigation items horizontally */
-  align-items: center; /* Centers the navigation items vertically */
-  margin-top: 20px; /* Adds margin on the top for spacing */
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px; 
 }
 
 nav ul li {
-  margin-right: 20px; /* Adds space to the right of each item */
+  margin-right: 20px; 
 }
 
 nav ul li:last-child {
-  margin-right: 0; /* Removes the right margin from the last item */
+  margin-right: 0; 
 }
 
 nav a {
-  padding: 10px 20px; /* Padding around the text in the links */
-  background-color: #fff; /* Background color of the links */
-  color: var(--primary-color); /* Text color set to primary color variable */
-  border: 2px solid var(--primary-color); /* Border color matching the text color */
-  border-radius: var(--border-radius); /* Border radius for rounded corners */
-  text-decoration: none; /* Removes underline from links */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  padding: 10px 20px; 
+  background-color: #fff; 
+  color: var(--primary-color); 
+  border: 2px solid var(--primary-color); 
+  border-radius: var(--border-radius); 
+  text-decoration: none; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 nav a:hover {
-  background-color: var(--primary-color); /* Background color on hover */
-  color: #fff; /* Text color on hover */
+  background-color: var(--primary-color); 
+  color: #fff;
 }
 
 /* Graph section */
@@ -169,7 +169,7 @@ nav a:hover {
   font-size: 1.5rem;
 }
 
-/* Style for the popup box */
+/* Style for the popup box (not in use currently) */
 .popup {
   width: 200px;
   height: 100px;
@@ -186,22 +186,22 @@ nav a:hover {
 }
 .input-group {
   display: flex;
-  align-items: center; /* Ensures vertical alignment of elements inside */
+  align-items: center; 
   position: relative;
 }
-
+/* Shadow $0.00 in Expense Amount input box */
 .dollar-sign {
   position: absolute;
-  left: 10px; /* Horizontal position inside the input */
-  top: 50%; /* Centers vertically relative to the parent */
-  transform: translateY(-50%); /* Adjust vertically to truly center the dollar sign */
-  pointer-events: none; /* Makes it non-interactive */
-  color: #333; /* Dollar sign color, adjust as needed */
-  font-size: 16px; /* Adjust the size of the dollar sign */
+  left: 10px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  pointer-events: none; 
+  color: #333; 
+  font-size: 16px; 
 }
 
 #expense_amount {
-  padding-left: 20px; /* Enough padding to not overlap the dollar sign */
+  padding-left: 20px; 
   flex-grow: 1;
 }
 
@@ -210,7 +210,7 @@ nav a:hover {
   font-weight: bold;
   color: #333;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-  margin-bottom: 20px; /* Adds space below the header */
+  margin-bottom: 20px; 
 }
 
 .welcome-btn {
@@ -236,7 +236,7 @@ nav a:hover {
 }
 
 .welcome-nav-item {
-  margin-bottom: 10px; /* Provides space between buttons */
+  margin-bottom: 10px; 
 }
 
 
