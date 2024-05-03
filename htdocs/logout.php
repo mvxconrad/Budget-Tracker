@@ -1,4 +1,4 @@
-<?php
+<?php //This page will not initialize unless you configure it to
 session_start(); // Start the session
 
 // Check if the user is logged in
@@ -21,7 +21,7 @@ exit(); // Ensure redirection
 <head>
     <meta charset="UTF-8">
     <title>Logout Successful</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css"> 
     <script>
         // Redirect to "login.php" after 3 seconds
         setTimeout(function() {
@@ -33,7 +33,6 @@ exit(); // Ensure redirection
     <div class="logout-message">
         <h1>You have successfully logged out.</h1>
         <p>Redirecting to the login page in 3 seconds...</p>
-        <!-- Optional: Add a loading spinner or animation -->
         <div class="spinner"></div>
     </div>
 </body>
