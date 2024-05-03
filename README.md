@@ -1,6 +1,6 @@
-# Project Name: Budget Tracker
+# Budget Tracker
 
-Welcome to the Budget Tracker project! This application helps users manage their expenses by providing tools to add, categorize, and visualize their expenditures through a web-based interface.
+Welcome to my Budget Tracker project! This application helps users manage their expenses by providing tools to add, categorize, and visualize their expenditures through a web-based interface.
 
 ## Prerequisites
 
