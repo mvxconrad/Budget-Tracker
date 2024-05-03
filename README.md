@@ -25,8 +25,9 @@ Clone the repository into the `htdocs` directory of your XAMPP installation. Thi
 
 ```bash
 cd /path/to/xampp/htdocs
-git clone https://github.com/mvxconrad/budget-tracker.git
+git clone https://github.com/mvxconrad/Budget-Tracker/htdocs.git
 ```
+Make sure you remove the sql file from /xampp/htdocs and move it to another location.
 
 #### Step 2: Database Setup
 
