@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         {
             header("location: 404.php");
     }
-    
+    // Argon2ID used for a more robust security
     $password_hash = password_hash($password, PASSWORD_ARGON2ID);
     $insert = $conn->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
     $insert->bindParam(":username", $username);
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <main>
         <section class="signup-form">
             <h2>Sign Up</h2>
-            <form id="signup-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+            <form id="signup-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST"> 
                 <div class="form-group">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required>
