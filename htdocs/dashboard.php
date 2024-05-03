@@ -5,7 +5,7 @@ if (empty($_SESSION["user_id"])) {
     header("Location: login.php");
     exit();
 }
-
+// Using db_connection.php to connect with database
 require 'db_connection.php';
 
 $categories_dropdown = [];
@@ -65,9 +65,10 @@ $totalsJSON = json_encode(empty($selected_category) ? $totals_pie : array_column
     <style>
         body { text-align: center; }
         main {
+            /* Css for layout */
             display: flex;
-            justify-content: space-between; /* Ensures space between sections */
-            align-items: flex-start; /* Align items at the top */
+            justify-content: space-between; 
+            align-items: flex-start; 
             padding: 20px;
         }
         section {
@@ -75,15 +76,15 @@ $totalsJSON = json_encode(empty($selected_category) ? $totals_pie : array_column
             box-sizing: border-box;
         }
         .table-section {
-            flex: 1; /* Flex grow to use available space */
-            max-width: 50%; /* Limits the width to half of its parent */
+            flex: 1; 
+            max-width: 50%; 
         }
         .graph-section {
-            flex: 1; /* Flex grow to use available space */
-            max-width: 50%; /* Limits the width to half of its parent */
+            flex: 1; 
+            max-width: 50%; 
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center the items vertically */
+            align-items: center; 
         }
         table {
             width: 100%;
@@ -102,9 +103,9 @@ $totalsJSON = json_encode(empty($selected_category) ? $totals_pie : array_column
             background-color: #f2f2f2;
         }
         canvas {
-            width: 100%; /* Full width of its container */
-            max-width: 400px; /* Maximum width */
-            height: auto; /* Height is auto to maintain aspect ratio */
+            width: 100%; 
+            max-width: 400px; 
+            height: auto; 
         }
     </style>
 </head>
